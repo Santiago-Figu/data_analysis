@@ -1,0 +1,17 @@
+questions and answers
+
+What does the shape of our dataframe tell us?
+R = How many rows and columns our dataframe has
+
+What does the loc method allow you to do?
+R = Access a group of rows and columns by supplying label(s) arguments.
+
+What is not allowed in a Jupyter Notebook's cell?
+R = An Excel sheet
+
+What are the three main types of Jupyter Notebook Cell?
+R = Code, Markdown and Raw
+
+What kind of data can you import and work with in a Jupyter Notebook?
+R = All of the above.
+
