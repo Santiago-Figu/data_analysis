@@ -7,7 +7,7 @@ Descarga el proyecto
 
 ```bash
     git clone https://github.com/Santiago-Figu/data_analysis.git
-    cd django-todo_list
+    cd data_analysis
 ```
 
 > [!NOTE]
@@ -43,32 +43,11 @@ Instalar Django y dependencias iniciales
 ```bash
     pip install 
     numpy
+    pandas
 ```
 > [!NOTE]
-> Si lo prefieres puedes usar el archivo requirements.txt
+> Recuerda instalar el kernel de Jupyter para ejecutar NoteBooks o su extensión de Visual Studio Code
 
-Ejecuta las migraciones iniciales de Django
-
-```bash
-    python manage.py makemigrations
-    python manage.py migrate
-    python manage.py createsuperuser
-    python manage.py runserver 0.0.0.0:8000
-```
-
-> [!NOTE]
-> Es importante crear un usuario en base de datos con las siguientes caracteristicas establecidas en el modelo **User** de la app **users**: 'name', 'lastname', 'username', 'password', 'email', 'cellphone', 'team'
-
-```bash
-    jose_admin | jose@algo.com | meoi1234
-    admin_test | admin_test@outlook.com | meoi1234
-```
-
-Ejecuta el servidor
-
-```bash
-    python manage.py runserver 0.0.0.0:8080
-```
 ## Acknowledgements
 
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
@@ -96,7 +75,13 @@ If you have any feedback, please reach out to us at sfigu@outlook.com
 
 [Curso "Data analysis with python"](https://www.freecodecamp.org/learn/data-analysis-with-python/data-analysis-with-python-course)
 
+[Ejercicios numpy](https://github.com/ine-rmotr-curriculum/freecodecamp-intro-to-numpy)
+
+[Ejercicios pandas](https://github.com/ine-rmotr-curriculum/freecodecamp-intro-to-pandas/tree/master)
+
 [freecodecamp Learn](https://www.freecodecamp.org/learn)
 
-[Ejercios](https://github.com/rmotr-curriculum/ds-content-interactive-jupyterlab-tutorial)
+[Jupyter Doc](https://jupyter.org/)
+
+[Visual Studio Code tutorial](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 

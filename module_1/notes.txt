@@ -1,17 +1,71 @@
 questions and answers
 
+Which of the following is not part of Data Analysis?
+R = Picking a desired conclusion for the analysis.
+#######################################################################
 What does the shape of our dataframe tell us?
 R = How many rows and columns our dataframe has
-
+#######################################################################
 What does the loc method allow you to do?
 R = Access a group of rows and columns by supplying label(s) arguments.
-
+#######################################################################
 What is not allowed in a Jupyter Notebook's cell?
 R = An Excel sheet
-
+#######################################################################
 What are the three main types of Jupyter Notebook Cell?
 R = Code, Markdown and Raw
-
+#######################################################################
 What kind of data can you import and work with in a Jupyter Notebook?
 R = All of the above.
+#######################################################################
+Why is Numpy an important, but unpopular Python library?
+R = Often you won't work directly with Numpy.
+#######################################################################
+About how much memory does the integer 5 consume in plain Python?
+R= 20 bytes
+#######################################################################
+What will the following code print out?
 
+A = np.array([
+    ['a', 'b', 'c'],
+    ['d', 'e', 'f'],
+    ['g', 'h', 'i']
+])
+
+print(A[:, :2])
+
+R = 
+[['a' 'b']
+['d' 'e']
+['g' 'h']]
+#######################################################################
+
+What is the value of a after you run the following code?
+
+a = np.arange(5)
+a + 20
+
+R= [0 1 2 3 4]
+#######################################################################
+
+What is the relationship between size of objects (such as lists and datatypes) 
+in memory in Python's standard library and the NumPy library? Knowing this, 
+what are the implications for performance?
+
+R = Standard Python objects take up more memory than NumPy objects;
+operations on NumPy objects complete very quickly compared to comparable objects in standard Python.
+
+#######################################################################
+
+What will the following code print out?
+
+import pandas as pd
+
+certificates_earned = pd.Series(
+    [8, 2, 5, 6],
+    index=['Tom', 'Kris', 'Ahmad', 'Beau']
+)
+
+print(certificates_earned)
+
+R = 
