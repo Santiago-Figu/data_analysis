@@ -1,0 +1,9 @@
+jupyter
+jupyter_client
+jupyter_core
+numpy
+pandas
+nbformat       # Para validar estructura de notebooks
+nbconvert      # Para convertir/ejecutar notebooks
+pytest         # Para tests en notebooks
+nbval          # Para validar outputs (tests en notebooks)

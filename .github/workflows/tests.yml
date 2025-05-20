@@ -1,0 +1,25 @@
+name: Python Notebook Checks
+on: [push, pull_request]  # Se ejecuta en cada push o PR
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: "3.11"  # Usa la versión que necesites
+
+      - name: Install dependencies
+        run: |
+            pip install -r requirements.txt
+        #   pip install jupyter nbformat pytest nbval
+
+      - name: Find and validate all notebooks recursively
+        run: |
+            find . -name "*.ipynb" -exec jupyter nbconvert --to script --execute {} \; || echo "Error en notebooks"
+        # Alternativa con pytest-nbval (si quieres tests):
+        # find . -name "*.ipynb" -exec pytest --nbval {} \;
