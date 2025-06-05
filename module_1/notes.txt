@@ -57,15 +57,40 @@ operations on NumPy objects complete very quickly compared to comparable objects
 
 #######################################################################
 
-What will the following code print out?
+The Python method .duplicated() returns a boolean
+Series for your DataFrame. True is the return value for rows that:
 
-import pandas as pd
+R = contain a duplicate, where the value for the row is at least the second occurrence of that value.
 
-certificates_earned = pd.Series(
-    [8, 2, 5, 6],
-    index=['Tom', 'Kris', 'Ahmad', 'Beau']
-)
+######################################################################
+When using Matplotlib's global API, what does the order of numbers mean here?
 
-print(certificates_earned)
+plt.subplot(1, 2, 1)
 
-R = 
+R= My figure will have one row, two columns, and I am going to start drawing in the first (left) plot.
+
+########################################################################
+What method does a Cursor instance have and what does it allow?
+R= The Cursor instance has an .execute() method which will receive SQL parameters to run against the database.
+
+########################################################################
+What Python library has the .read_html() method we can use for parsing HTML documents and extracting tables?
+R= Pandas
+
+########################################################################
+How do we define blocks of code in the body of functions in Python?
+R= We use indentation, usually right-aligned 4 spaces.
+
+########################################################################
+What is the main difference between lists and tuples in Python?
+R= Tuples are immutable.
+
+########################## Modulo 2 #####################################
+Why are Numpy arrays faster than regular Python lists?
+R= Numpy does not perform type checking while iterating through objects.
+Numpy uses fixed types.
+Numpy uses contiguous memory.
+
+#########################################################################
+Why are Numpy arrays faster than regular Python lists?
+R= Numpy uses contiguous memory.

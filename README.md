@@ -38,7 +38,7 @@ Activa el entorno virtual (recomendado)
     python.exe -m pip install --upgradepip
 ```
 
-Instalar Django y dependencias iniciales
+Instalar dependencias iniciales
 
 ```bash
     pip install 
